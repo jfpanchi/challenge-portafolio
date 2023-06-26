@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+:root{
+   
+   --color-white: #F5F5F5;
+   --color-black: #000;
+   --color-primary-ligth: #A7BAF2;
+   --color-primary-dark : #7790D9;
+   --color-secondary-ligth: #6273D9;
+   --color-secondary-dark: #3B42BF;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-size: 'EB Garamond', serif;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*Sección Menu*/
+
+main.main {
+    background: var(--color-white);
+}
+
+section.menu{
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.menu__header {
+    display: flex;
+    align-items: center;
+}
+
+.menu__title {
+    margin-left: 4px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.menu__nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu__list {
+    display: flex;
+    
+}
+
+.menu__list__item {
+    margin-right: 12px;
+}
+
+.menu__list__item:hover {
+    text-decoration: underline;
+}
+
+.menu__list__item__contato {
+    font-weight: 700;
+}
+
+/*Sección Title*/
+
+section.title{
+    padding: 1.4rem 10%;
+}
+
+.title__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.title__profile {
+    width: 280px;
+    border-radius: 50%;
+}
+
+.title__bio {
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.title__subsection {
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.title__network {
+    display: flex;
+    padding: 0;
+}
+
+.title__network__item {
+    margin-right: 8px;
+}
+
+/*Sección About*/
+
+section.about{
+    padding: 2.8rem 10%;
+    background: var(--color-primary-dark);
+}
+
+.about__title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.about__container p{
+    margin-right: 280px;
+}
+
+/*Sección Hobbies*/
+
+section.hobbies{
+    
+}
+
+/* Experiencia Académica*/
+
+section.academic{
+
+}
+
+/* experiencia*/
+
+section.experience{
+
+}
+
+/*Contacto*/
+
+section.formcontato{
+
+}
+
+/*footeer*/
+
+section.footer{
+   
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menú */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sección sobre mi*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+ /*Contacto*/
+
+/*Footer*/
+
+}
