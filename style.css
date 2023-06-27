@@ -2,7 +2,7 @@
 :root{
    
    --color-white: #F5F5F5;
-   --color-black: #000;
+   --color-black: #464646;
    --color-primary-ligth: #A7BAF2;
    --color-primary-dark : #7790D9;
    --color-secondary-ligth: #6273D9;
@@ -16,6 +16,7 @@ body {
     padding: 0;
     line-height: 1;
     font-size: 'EB Garamond', serif;
+    color: var(--color-black);
 }
 ol, ul,li {
     list-style: none;
@@ -80,6 +81,7 @@ section.title{
 .title__wrapper {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
 }
 
 .title__profile {
@@ -88,7 +90,7 @@ section.title{
 }
 
 .title__bio {
-    font-size: 2.8rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 
@@ -122,22 +124,212 @@ section.about{
     margin-right: 280px;
 }
 
+/*Sección Skills*/
+
+section.skills {
+    padding: 2.8rem 10%;
+}
+
+.hobbies__title {
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.hobbies__line {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hobbies__box {
+    width: 14%;
+    height: 200px;
+    display: flex;
+    justify-content: start;
+    margin: 1.33%;
+    background: white;
+}
+
+.hobbies__box ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem;
+    align-self: end;
+}
+
+.hobbies__img {
+    width: 22px;
+}
+
+.hobbies__name {
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+
 /*Sección Hobbies*/
 
 section.hobbies{
-    
+    padding: 2rem 10%;
 }
+
+.skills__title {
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.skills__line {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills__box {
+    width: 14%;
+    height: 200px;
+    display: flex;
+    justify-content: start;
+    margin: 1.33%;
+    background: white;
+}
+
+.skills__box ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem;
+    align-self: end;
+}
+
+.skills__img {
+    width: 22px;
+}
+
+.skills__name {
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
 
 /* Experiencia Académica*/
 
 section.academic{
-
+    padding: 2rem 10%;
 }
+
+.academic__title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.academic__courses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.academic__courses__box {
+    width: 32%;
+    margin: 1.33%;
+}
+
+.academic__courses__list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.academic__courses__item__img {
+   background-color: white;
+   height: 200px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.academic__courses__item__img img{
+    width: 200px;
+    height: 60px;
+}
+
+.academic__courses__item__title h4{
+    font-size: 1.2rem;
+    margin: 4px 0;
+}
+
+.academic__courses__item__subtitle p{
+    font-size: small;
+    font-style: italic;
+    margin: 4px 0;
+}
+
+
 
 /* experiencia*/
 
 section.experience{
+    padding: 2rem 10%;
+}
 
+.experience__section__title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.experiencie__box {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.experiencie__box:nth-child(even){
+    flex-direction: row;
+}
+
+.experiencie__box:nth-child(odd){
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.experience__img {
+    width: 70%;
+}
+
+.experience__info {
+    padding: 0 1rem;
+}
+
+.experience__title {
+    font-size: 1.4rem;
+}
+
+.experience__text {
+    font-size: small;
+}
+
+.experiencia__botao--repo {
+    color: var(--color-secondary-ligth);
+    border: 1px solid var(--color-secondary-ligth);
+    padding: 0.5rem 1rem;
+}
+
+.experiencia__botao--repo:hover {
+    color: var(--color-secondary-dark);
+    border: 1px solid var(--color-secondary-dark);
+    cursor: pointer;
+}
+
+.experience__botao--demo {
+    color: var(--color-white);
+    border: none; 
+    background-color: var(--color-secondary-ligth);
+    padding: 0.5rem 1rem;
+}
+
+.experience__botao--demo:hover{
+    background-color: var(--color-secondary-dark);
+    cursor: pointer;
 }
 
 /*Contacto*/
@@ -157,7 +349,7 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 
 /*Tablet*/
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 
 /* Menú */
 
@@ -165,7 +357,27 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 /*Skills*/
 
+section.skills {
+    padding: 2rem 5%;
+}
+
+.skills__box {
+    width: 31.3%;
+    margin: 1%;
+}
+
 /*Hobbies*/
+
+section.hobbies{
+    padding: 2rem 5%;
+}
+
+.hobbies__box {
+    width: 31.3%;
+    margin: 1%;
+}
+
+
 
 /*Formación Académica*/
 
