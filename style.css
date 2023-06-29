@@ -130,49 +130,6 @@ section.skills {
   padding: 2.8rem 10%;
 }
 
-.hobbies__title {
-  text-align: center;
-  font-size: 2rem;
-  font-style: italic;
-  font-weight: 700;
-}
-
-.hobbies__line {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.hobbies__box {
-  width: 14%;
-  height: 200px;
-  display: flex;
-  justify-content: start;
-  margin: 1.33%;
-  background: white;
-}
-
-.hobbies__box ul {
-  display: flex;
-  flex-direction: column;
-  padding: 0.8rem;
-  align-self: end;
-}
-
-.hobbies__img {
-  width: 22px;
-}
-
-.hobbies__name {
-  font-weight: bold;
-  font-size: 0.8rem;
-}
-
-/*Sección Hobbies*/
-
-section.hobbies {
-  padding: 2rem 10%;
-}
-
 .skills__title {
   text-align: center;
   font-size: 2rem;
@@ -206,6 +163,49 @@ section.hobbies {
 }
 
 .skills__name {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+/*Sección Hobbies*/
+
+section.hobbies {
+  padding: 2rem 10%;
+}
+
+.hobbies__title {
+  text-align: center;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.hobbies__line {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hobbies__box {
+  width: 14%;
+  height: 200px;
+  display: flex;
+  justify-content: start;
+  margin: 1.33%;
+  background: white;
+}
+
+.hobbies__box ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem;
+  align-self: end;
+}
+
+.hobbies__img {
+  width: 22px;
+}
+
+.hobbies__name {
   font-weight: bold;
   font-size: 0.8rem;
 }
@@ -459,54 +459,219 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 /*Tablet*/
 @media (max-width: 768px) {
+  
   /* Menú */
 
+  section.menu {
+    padding: 0 5%;
+  }
+
+  .menu__list{
+    display: none;
+  }
+
   /*title*/
+
+  section.title {
+    padding: 1rem 5%;
+  }
+
+  .title__profile {
+    width: 180px;
+    
+  }
+
+  .title__bio {
+    font-size: 1.6rem;
+  }
+
+  /*About*/
+
+  section.about {
+    padding: 1.2rem 5%
+  }
+
+  .about__container p {
+    margin-right: 0;
+  }
+  
 
   /*Skills*/
 
   section.skills {
-    padding: 2rem 5%;
+    padding: 1.2rem 5%;
   }
 
   .skills__box {
+    height: 140px;
     width: 31.3%;
+    margin: 1%;
+  }
+
+  .skills__name {
+    font-size: 1rem;
+  }
+
+  /*Hobbies*/
+
+  section.hobbies {
+    padding: 1.2rem 5%;
+  }
+
+  .hobbies__box {
+    height: 140px;
+    width: 31.3%;
+    margin: 1%;
+  }
+
+  .hobbies__name {
+    font-size: 1rem;
+  }
+
+  /*Formación Académica*/
+
+  section.academic {
+    padding: 1.2rem 5%;
+  }
+
+  .academic__courses__item__img {
+    height: 140px;
+  }
+
+  .academic__courses__item__img img {
+    width: 100px;
+    height: 20px;
+  }
+
+  /*Experiencia Profesional*/
+  section.experience {
+    padding: 1.2rem 5%;
+  }
+
+  .experiencie__box {
+    align-items: start;
+    padding: 2rem 0;
+  }
+
+  .experience__img {
+    width: 95%;
+  }
+
+  .experiencie__box:nth-child(even) {
+    flex-direction: column;
+  }
+  
+  .experiencie__box:nth-child(odd) {
+    flex-direction: column;
+  }
+  
+  .experience__info {
+    padding: 0;
+  }
+
+  /*Contacto*/
+  
+  section.formcontato {
+    padding: 2rem 5%;
+  }
+
+  .formcontato--esquerda {
+    width: 0;
+  }
+
+  .formcontato__img {
+    display: none;
+  }
+
+  .formcontato__text {
+    padding: 0;
+  }
+
+}
+
+/*Mobile*/
+@media (max-width: 425px) {
+  /*Menu*/
+
+  section.menu {
+    padding: 0 4%;
+  }
+
+  /*Titulo*/
+
+  section.title {
+    padding: 1rem 4%;
+  }
+
+  .title__wrapper {
+    flex-direction: column;
+  }
+
+  /*Sección sobre mi*/
+
+  section.about {
+    padding: 0.6rem 4%
+  }
+
+  /*Skills*/
+
+  section.skills {
+    padding: 1rem 4%;
+  }
+
+  .skills__box {
+    height: 120px;
+    width: 48%;
     margin: 1%;
   }
 
   /*Hobbies*/
 
   section.hobbies {
-    padding: 2rem 5%;
+    padding: 1rem 4%;
   }
 
   .hobbies__box {
-    width: 31.3%;
+    height: 120px;
+    width: 48%;
     margin: 1%;
   }
 
   /*Formación Académica*/
 
+  section.academic {
+    padding: 1.2rem 4%;
+  }
+
+
+  .academic__courses {
+    flex-direction: column;
+  }
+
+  .academic__courses__box {
+    width: 95%;
+  }
+
+  .academic__courses__item__img img {
+    width: 200px;
+    height: 60px;
+  }
+  
   /*Experiencia Profesional*/
-}
 
-/*Mobile*/
-@media (min-width: 425px) {
-  /*Menu*/
-
-  /*Titulo*/
-
-  /*Sección sobre mi*/
-
-  /*Skills*/
-
-  /*Hobbies*/
-
-  /*Formación Académica*/
-
-  /*Experiencia Profesional*/
+  section.experience {
+    padding: 1.2rem 4%;
+  }
 
   /*Contacto*/
+
+  section.formcontato {
+    padding: 2rem 4%;
+  }
+
+  .formcontato__header {
+    margin-bottom: 1.4rem;
+  }
 
   /*Footer*/
 }
